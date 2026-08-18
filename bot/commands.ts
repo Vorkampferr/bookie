@@ -1,5 +1,5 @@
 import { type Bot } from "grammy";
-import type { BotContext } from "../bot";
+import type { BotContext } from "../bot.ts";
 
 async function initCommands(bot: Bot<BotContext>) {
   await bot.api.setMyCommands([

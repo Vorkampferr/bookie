@@ -1,4 +1,4 @@
-import type { queryResult } from "./bot";
+import type { queryResult } from "./bot.ts";
 
 export interface SessionData {
   results: queryResult[];

@@ -1,6 +1,6 @@
 import type { Context } from "grammy";
-import { ERROR_MESSAGES, ErrorCode } from "../../network/error";
-import User from "../../db/schema/user";
+import { ERROR_MESSAGES, ErrorCode } from "../../network/error.ts";
+import User from "../../db/schema/user.ts";
 
 export async function handleStart(ctx: Context): Promise<void> {
   try {

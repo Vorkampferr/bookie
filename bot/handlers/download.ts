@@ -1,11 +1,11 @@
 import type { Context } from "grammy";
-import { validateURL } from "../../utils/validator";
-import { escapeMarkdownV2 } from "../../utils/escaper";
+import { validateURL } from "../../utils/validator.ts";
+import { escapeMarkdownV2 } from "../../utils/escaper.ts";
 import crawlNoor from "../../network/noor_crawler";
-import { ErrorCode, ERROR_MESSAGES } from "../../network/error";
+import { ErrorCode, ERROR_MESSAGES } from "../../network/error.ts";
 import { InputFile } from "grammy";
-import User from "../../db/schema/user";
-import type { queryResult } from "../../types/bot";
+import User from "../../db/schema/user.ts";
+import type { queryResult } from "../../types/bot.ts";
 
 export const dlCommandRegex = [
   /^\/dl_([a-zA-Z0-9]{10})$/,

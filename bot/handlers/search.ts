@@ -1,9 +1,9 @@
 import type { Context } from "grammy";
-import { searchQuery } from "../../network/noor_crawler/search";
-import { ErrorCode, ERROR_MESSAGES } from "../../network/error";
-import { escapeHtml } from "../../utils/escaper";
-import type { SearchContext } from "../../types/contexts";
-import type { scraperResponse } from "../../types/scraper";
+import { searchQuery } from "../../network/noor_crawler/search.ts";
+import { ErrorCode, ERROR_MESSAGES } from "../../network/error.ts";
+import { escapeHtml } from "../../utils/escaper.ts";
+import type { SearchContext } from "../../types/contexts.ts";
+import type { scraperResponse } from "../../types/scraper.ts";
 
 export async function handleSearch(ctx: Context) {
   const searchCtx = ctx as SearchContext;
