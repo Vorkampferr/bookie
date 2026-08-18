@@ -1,7 +1,7 @@
 import type { Context } from "grammy";
 import { validateURL } from "../../utils/validator.ts";
 import { escapeMarkdownV2 } from "../../utils/escaper.ts";
-import crawlNoor from "../../network/noor_crawler";
+import crawlNoor from "../../network/noor_crawler/index.ts";
 import { ErrorCode, ERROR_MESSAGES } from "../../network/error.ts";
 import { InputFile } from "grammy";
 import User from "../../db/schema/user.ts";
