@@ -1,0 +1,42 @@
+{
+  "name": "bookie",
+  "version": "1.0.0",
+  "description": "Telegram book downloading bot from different resources.",
+  "keywords": [
+    "telegram",
+    "bot",
+    "book"
+  ],
+  "license": "ISC",
+  "author": "vorkampfer",
+  "type": "module",
+  "main": "bot.ts",
+  "scripts": {
+    "start": "node bot.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx bot.ts"
+  },
+  "dependencies": {
+    "@crawlee/impit-client": "^3.18.0",
+    "@grammyjs/commands": "^1.4.0",
+    "@grammyjs/ratelimiter": "^1.2.1",
+    "@grammyjs/runner": "^2.0.3",
+    "@grammyjs/storage-mongodb": "^2.6.0",
+    "cheerio": "^1.2.0",
+    "crawlee": "^3.18.0",
+    "dotenv": "^17.4.2",
+    "grammy": "^1.45.1",
+    "grammy-middlewares": "^1.0.11",
+    "impit": "^0.14.3",
+    "mongodb": "^7.5.0",
+    "mongoose": "^9.9.2",
+    "playwright": "^1.62.1",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@total-typescript/tsconfig": "^1.0.4",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

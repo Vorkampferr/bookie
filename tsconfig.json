@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "module": "es2022",
+    "target": "es2025"
+  },
+  "extends": [
+    "@total-typescript/tsconfig/tsc/no-dom/app",
+    "@total-typescript/tsconfig/tsc/no-dom/library",
+    "@total-typescript/tsconfig/tsc/no-dom/library-monorepo"
+  ]
+}
