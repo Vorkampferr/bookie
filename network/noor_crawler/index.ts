@@ -1,4 +1,5 @@
 import { PlaywrightCrawler, log as crawleeLog } from "crawlee";
+import { firefox } from "playwright";
 import { createNoorRouter } from "./router.ts";
 import uniqueID from "../../utils/id.ts";
 import createConfig from "../crawlee.config.ts";
@@ -27,14 +28,15 @@ const crawlNoor = async (url: URL | string): Promise<playwrightResponse[]> => {
         useFingerprints: true,
         fingerprintOptions: {
           fingerprintGeneratorOptions: {
-            browsers: ["chrome"],
+            browsers: ["firefox"],
             devices: ["desktop"],
-            operatingSystems: ["windows"],
+            operatingSystems: ["linux", "windows"],
           },
         },
       },
 
       launchContext: {
+        launcher: firefox,
         launchOptions: {
           headless: true,
         },
